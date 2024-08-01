@@ -1,0 +1,26 @@
+omni.replicator.character:
+  version: 0.1.0
+  global:
+    seed: 123456
+    camera_num: 1
+    lidar_num: 0
+    simulation_length: 10
+  scene:
+    asset_path: 
+  character:
+    asset_path:
+    command_file:
+    filters:
+    num: 5
+  robot:
+    command_file:
+    num: 0
+    write_data: false
+  replicator:
+    writer: BasicWriter
+    parameters:
+      output_dir:
+      rgb: True
+      semantic_segmentation: True
+      distance_to_camera: True
+      camera_params: True
